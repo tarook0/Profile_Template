@@ -4,6 +4,7 @@ import { Split } from "../Ui/Splite";
 import { Center } from "../Ui/Center";
 import { Layers } from "../Ui/Layers";
 import SideBar from "../Ui/SideBar";
+import RightSide from "../Ui/RightSide";
 
 const ContentArea = styled(Pad).attrs(() => ({
   padding: "xl",
@@ -35,7 +36,7 @@ export default function Content() {
         </SettingsHeader>
         <SettingsPane>
           <SideBar />
-          <div>Right hand side goes here</div>
+          <RightSide/>
         </SettingsPane>
       </Center>
     </ContentArea>
