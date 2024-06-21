@@ -1,7 +1,9 @@
-
+import MenuBar from "./MenuBar";
 
 export default function MainPage() {
   return (
-    <div>MainPage</div>
-  )
+    <div>
+      <MenuBar />
+    </div>
+  );
 }
