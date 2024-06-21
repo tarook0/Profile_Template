@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { Inline } from "../Ui/Inline";
 import { Pad } from "../Ui/Pad";
+import { Logo } from "../Ui/Logo";
 
-const Menu = styled(Inline).attrs(() => ({
+export const Menu = styled(Inline).attrs(() => ({
   as: Pad,
   gutter: "l",
   padding: ["m", "xl"],
@@ -13,29 +14,31 @@ const Menu = styled(Inline).attrs(() => ({
   color: wheat;
   border-block-end: 1px solid #0c021e;
 `;
+export const Item = styled(Pad).attrs(() => ({
+  padding: ["s", "m"],
+  as: "li",
+}))`
+  background: ${(props) => (props.active ? "#361f5d" : "tranparent")};
+  border-radius: 0.25rem;
+  list-style-type:none;
+`;
 
 export default function MenuBar() {
   return (
     <div>
-      <Menu
-        as={Pad}
-        padding={["m", "xl"]}
-        gutter="l"
-        align="center"
-        stretch={1}
-      >
-        <div>logo</div>
+      <Menu>
+        <Logo size="2.5rem" />
         <nav>
           <Inline gutter="s" as={"ul"}>
-            <li>Overview</li>
-            <li>Position</li>
-            <li>Candidates</li>
-            <li>Employer</li>
+            <Item active >Overview</Item>
+            <Item>Position</Item>
+            <Item>Candidates</Item>
+            <Item>Employer</Item>
           </Inline>
         </nav>
         <input placeholder="search" />
-        <div>icon</div>
-        <div>Profile</div>
+        <Logo square size="1.5rem" />
+        <Logo size="2.5rem" />
       </Menu>
     </div>
   );
