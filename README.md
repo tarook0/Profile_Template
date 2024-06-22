@@ -4,7 +4,7 @@ This template provides a minimal setup to get a Profile template with React and 
 
 ## Features
 
-- **Responsive Design**: The layout and components are designed to be mobile-friendly and adapt to various screen sizes.
+- **Responsive Design**: The layout and components are designed to be user-friendly and adapt to various screen sizes.
 - **Reusable Components**: The template includes a set of reusable React components that can be easily customized to fit your needs, such as an About section, a Skills section, a Projects section, and a Contact form.
 ## Getting Started
 
