@@ -1,10 +1,10 @@
-import styled from "styled-components"
+import styled from "styled-components";
 import { Layers } from "./Layers";
 import { Pad } from "./Pad";
 import { Split } from "./Splite";
 import { Logo } from "./Logo";
 import { Column, Columns } from "./Column";
-
+import Controls from "./controls";
 
 const Form = styled.div`
   border-inline-start: 1px solid lightgrey;
@@ -31,6 +31,7 @@ const Input = styled.input`
   border-radius: 0.25rem;
   border: 1px solid lightgrey;
   color: #303030;
+  background-color: white;
   height: 30px;
 `;
 
@@ -83,7 +84,7 @@ const RightSide = () => {
         </Layers>
       </Pad>
 
-     {/* // <Controls /> */}
+      <Controls />
     </Form>
   );
 };
