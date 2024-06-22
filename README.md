@@ -1,6 +1,6 @@
 # Profile_Template
 
-This template provides a minimal setup to get a professional-looking personal portfolio website up and running with React and Vite.
+This template provides a minimal setup to get a Profile template with React and Vite.
 
 ## Features
 
